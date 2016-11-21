@@ -1,6 +1,6 @@
 console.log("creating outer divs works");
 
-function createDivFrames(){
+// function createDivFrames(){
 	var outerFrame = document.createElement("div");
 	outerFrame.className = "outer-frame";
 
@@ -21,6 +21,6 @@ function createDivFrames(){
 	outerFrame.appendChild(grid);
 
 	document.body.appendChild(outerFrame);
-}
+// }
 
-createDivFrames();
+// createDivFrames();
