@@ -224,9 +224,18 @@ function savePaintToCanvas(pixel) {
   console.log(pixelClassName);
 }
 
+// MS Draw
+// var title = document.createElement("div");
+// title.className = "title";
+// page.palette.appendChild(title);
+
+// var msDraw = document.createTextNode("MS Draw");
+// title.appendChild(msDraw);
+
 // generate palette grid
 var generatePaletteGrid = (function() {
   var tableDiv = document.createElement("div");
+  tableDiv.className = "table";
   var colors = [["#ff0000", "#ff6a00", "#ffaa00"], ["#fff200", "#2eff00", "#0a7218"], ["#00fff6", "#0050f2", "#cd62ea"], ["#9400ff","#b5b5b5", "#000000"]];
   var columnNum = 3;
   var rowNum = 4;
@@ -276,10 +285,10 @@ $(CLASS.SELECTOR + CLASS.COLORS).onEvent(DEVICES.MOUSE, MOUSE.CLICK, function() 
 
 // button functions 
 $(".button-clear").onEvent(DEVICES.MOUSE, MOUSE.CLICK, function() {
-  console.log("sanity check");
   paint.render();
 });
 
 $(".button-erase").onEvent(DEVICES.MOUSE, MOUSE.CLICK, function() {
   foregroundColor = COLOR.WHITE;
 });
+

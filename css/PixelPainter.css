@@ -29,6 +29,14 @@ body {
   height: 600px;
   width: calc(100% - 10px);
   margin: 5px;
+  display: table;
+}
+
+.table {
+  text-align: center;
+  vertical-align: 30%;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .colors {
@@ -45,7 +53,22 @@ body {
   margin: 5px;
   max-width: 100%;
   max-height: 100%;
+ /* display: table;*/
 }
+
+.button-erase {
+  clear: right;
+}
+
+/*.button-clear {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.button-erase {
+  display: table-cell;
+  vertical-align: middle;
+}*/
 
 .paint-grid {
   margin: auto;
